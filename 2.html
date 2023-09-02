@@ -1,0 +1,106 @@
+<!-- 1.html -->
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>aapka order taiyaar hai</title>
+    <style>
+        /* Your CSS styles here */
+        body {
+            font-family: Arial, sans-serif;
+            background-color: #f4f4f4;
+            margin: 0;
+            padding: 0;
+            text-align: center;
+            animation: fadeIn 1s ease-in;
+        }
+
+        @keyframes fadeIn {
+            from {
+                opacity: 0;
+            }
+            to {
+                opacity: 1;
+            }
+        }
+
+        h1 {
+            font-size: 36px;
+            margin: 0;
+            padding: 20px;
+        }
+
+        .container {
+            padding: 20px;
+        }
+
+        .food-images {
+            display: flex;
+            justify-content: center;
+            gap: 20px;
+            margin-top: 20px;
+            overflow-x: auto; /* Add horizontal scroll if needed */
+        }
+
+        .food-image-container {
+            position: relative;
+        }
+
+        .food-image {
+            max-width: 100%; /* Adjust the width to fit the screen */
+            max-height: 100px; /* Adjust the height as needed */
+            width: auto;
+            height: auto;
+            cursor: pointer;
+            transition: transform 0.3s ease-in-out;
+        }
+
+        .food-image:hover {
+            transform: scale(1.05);
+        }
+
+        .checkbox {
+            position: absolute;
+            top: 0;
+            left: 0;
+            z-index: 1;
+            opacity: 0;
+            cursor: pointer;
+        }
+    </style>
+</head>
+<body>
+    <h1>Welcome again</h1>
+
+    <div class="container">
+        
+
+        <!-- Checkboxes for Image Selection -->
+        <form action="2.html" method="post">
+            <div class="checkbox-group">
+                <label class="checkbox-label">
+                    <input type="checkbox" name="order[]" value="Food 1">
+                    ye lijiye aapka order ready hai.
+                </label>
+                <!-- Add similar checkboxes for other images -->
+            </div>
+
+            <!-- Food Images to Choose From -->
+            <div class="food-images">
+                <div class="food-image-container">
+                    <input type="checkbox" class="checkbox">
+                    <img class="food-image" src="image5.jpg" alt="Food 1">
+                </div>
+                <!-- Add similar image containers for other images -->
+            </div>
+
+            <!-- Submit Button -->
+            <a href="3.html">
+                Rate
+            </a>
+            
+        </form>
+    </div>
+</body>
+</html>

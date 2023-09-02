@@ -1,0 +1,102 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Aapke saath buffet kha kr accha laga</title>
+    <style>
+        /* Your CSS styles here */
+        body {
+            font-family: Arial, sans-serif;
+            background-color: #f4f4f4;
+            margin: 0;
+            padding: 0;
+        }
+
+        .container {
+            max-width: 600px;
+            margin: 0 auto;
+            padding: 20px;
+            background-color: white;
+            border-radius: 10px;
+            box-shadow: 0 0 10px rgba(0, 0, 0, 0.2);
+        }
+
+        h1 {
+            font-size: 24px;
+            text-align: center;
+            margin-bottom: 20px;
+        }
+
+        p {
+            font-size: 18px;
+            margin-bottom: 10px;
+        }
+
+        .contact-info {
+            display: none; /* Initially hidden */
+            padding: 20px;
+            border: 1px solid #ccc;
+            border-radius: 5px;
+            background-color: #f9f9f9;
+        }
+
+        ul {
+            list-style-type: none;
+            padding: 0;
+        }
+
+        li {
+            margin-bottom: 10px;
+        }
+
+        a {
+            text-decoration: none;
+            color: #007BFF;
+        }
+
+        a:hover {
+            text-decoration: underline;
+        }
+
+        /* Style for the "Show Details" button/link */
+        #show-details {
+            display: block;
+            text-align: center;
+            margin-top: 20px;
+            text-decoration: underline;
+            color: #007BFF;
+            cursor: pointer;
+        }
+    </style>
+</head>
+<body>
+    <div class="container">
+        <h1>Contact Details</h1>
+
+        <!-- Button/link to show the contact details -->
+        <a id="show-details">Show Details</a>
+
+        <!-- Contact details pop-up -->
+        <div class="contact-info" id="contact-popup">
+            <ul>
+                <li><strong>Name:</strong> Sachin Choudhary</li>
+                <li><strong>Email:</strong> <a href="mailto:sachin0choudhary2@email.com">sachin0choudhary2@email.com</a></li>
+                <li><strong>Phone:</strong> +91 7073300753</li>
+                <li><strong>Location:</strong> Jalandhar, Punjab</li>
+            </ul>
+        </div>
+    </div>
+
+    <script>
+        // JavaScript to show/hide the contact details pop-up
+        const showDetailsButton = document.getElementById("show-details");
+        const contactPopup = document.getElementById("contact-popup");
+
+        showDetailsButton.addEventListener("click", () => {
+            // Toggle the visibility of the contact details pop-up
+            contactPopup.style.display = contactPopup.style.display === "block" ? "none" : "block";
+        });
+    </script>
+</body>
+</html>
